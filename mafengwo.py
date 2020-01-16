@@ -77,7 +77,7 @@ class MaFengWo(object):
     def get_poi_id(self,city_id):
         for page in range(1,301):
             t=1579138712402
-            qdata = '{"_ts":"' + str(t) + '","iMddid":"10156","iPage":"' + str(page) + '","iTagId":"0","sAct":"KMdd_StructWebAjax|GetPoisByTag"}c9d6618dbc657b41a66eb0af952906f1'
+            qdata = '{"_ts":"' + str(t) + '","iMddid":"'+city_id+'","iPage":"' + str(page) + '","iTagId":"0","sAct":"KMdd_StructWebAjax|GetPoisByTag"}c9d6618dbc657b41a66eb0af952906f1'
             sn=self.par(qdata.encode('utf-8'))
 
             data = {
